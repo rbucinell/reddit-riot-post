@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Reddit Riot Highlighter",
+    "version": "0.1",
+    "description": "This extension highlights comments with the RIOT tag on reddit",
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_icon": "icon.png"
+    }
+  }
